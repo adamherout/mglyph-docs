@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MGlyph documentation &mdash; MGlyph  documentation</title>
+  <title>MGlyph library &mdash; MGlyph  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -62,7 +62,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">MGlyph documentation</li>
+      <li class="breadcrumb-item active">MGlyph library</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -72,12 +72,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mglyph-documentation">
-<h1>MGlyph documentation<a class="headerlink" href="#mglyph-documentation" title="Link to this heading"></a></h1>
-<p>Add your content using <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> syntax. See the
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
-documentation for details.</p>
-<p>The very first version of documentation</p>
+  <section id="mglyph-library">
+<h1>MGlyph library<a class="headerlink" href="#mglyph-library" title="Link to this heading"></a></h1>
+<p>Malleable Glyph is a <strong>small graphical design</strong>, fitting exactly to a square of 1in × 1in. It is <strong>“shaped” by a numerical parameter</strong> $x$ ranging from $0.0$ to $100.0$.</p>
+<p>This is the <cite>mglyph</cite> library that offers an easy way how to design and preview malleable glyphs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">simple_line</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">canvas</span><span class="p">:</span><span class="n">mg</span><span class="o">.</span><span class="n">Canvas</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">canvas</span><span class="o">.</span><span class="n">line</span><span class="p">((</span><span class="n">mg</span><span class="o">.</span><span class="n">lerp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="n">mg</span><span class="o">.</span><span class="n">lerp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">),</span>
+               <span class="n">width</span><span class="o">=</span><span class="s1">&#39;50p&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;navy&#39;</span><span class="p">,</span> <span class="n">linecap</span><span class="o">=</span><span class="s1">&#39;round&#39;</span><span class="p">)</span>
+<span class="n">mg</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">simple_line</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="to-start-with-mglyph">
+<h1>To start with <cite>mglyph</cite><a class="headerlink" href="#to-start-with-mglyph" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>check out <a class="reference external" href="https://github.com/adamherout/mglyph/blob/main/tutorials/mglyph%20tutorial.ipynb">the tutorial</a> (just download the Jupyter Notebook and run it, or explore the same one <a class="reference external" href="https://colab.research.google.com/drive/1T8DHWpUBLNbo-QB5o6SXDjZrHjSVp4vv">in Google Colab</a>)</p></li>
+<li><p>see the library <a class="reference external" href="https://github.com/adamherout/mglyph?tab=readme-ov-file#introduction">homepage at GitHub</a></p></li>
+<li><p>read <a class="reference external" href="https://arxiv.org/abs/2503.16135">the paper</a></p></li>
+</ul>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>

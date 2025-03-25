@@ -12,7 +12,8 @@ build:
   tools:
     python: "3.13"
   commands:
-    - cp -r build/html/* $READTHEDOCS_OUTPUT_DIR/
+    - mkdir -p $READTHEDOCS_OUTPUT/html
+    - cp -r build/html/* $READTHEDOCS_OUTPUT/html
 
 # python:
 #   install:

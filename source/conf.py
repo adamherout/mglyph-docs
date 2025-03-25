@@ -53,4 +53,4 @@ htmlhelp_basename = 'MGlyph package'
 manpages_url = 'https://tmgc.fit.vutbr.cz/'
 
 
-version = '0.5.2'
+version = '0.5.2a'
